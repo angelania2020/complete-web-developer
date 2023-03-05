@@ -9,64 +9,104 @@
 </head>
 
 <body>
-    <form action="">
-        <label for="first-name">First name:</label>
-        <input type="text" id="first-name">
+    <header>
+        <h1>Register</h1>
+    </header>
 
-        <br>
+    <nav>
+        <a href="https://www.google.com">Google</a>
+    </nav>
 
-        <label for="last-name">Last name:</label>
-        <input type="text" id="last-name">
+    <main>
+        <form action="/action_page.php" method="post">
+            <label for="firstName">First name:</label>
+            <input type="text" id="firstName" name="firstName">
 
-        <br>
+            <br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" required>
+            <label for="lastName">Last name:</label>
+            <input type="text" id="lastName" name="lastName">
 
-        <br>
+            <br>
 
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <br><br>
+            <br>
 
-        <legend>Gender:</legend>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
 
-        <div>
-            <input type="radio" id="male" name="gender" checked>
-            <label for="male">Male</label>
-        </div>
-        <div>
-            <input type="radio" id="female" name="gender">
-            <label for="female">Female</label>
-        </div>
-        <div>
-            <input type="radio" id="other" name="gender">
-            <label for="other">Other</label>
-        </div>
+            <br>
 
-        <br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
 
-        <legend>Pets:</legend>
-        <div>
-            <input type="checkbox" id="cat" name="cat">
-            <label for="cat">Cat</label>
-        </div>
-        <div>
-            <input type="checkbox" id="dog" name="dog">
-            <label for="dog">Dog</label>
-        </div>
-        <div></div>
+            <br><br>
 
+            <fieldset>
+                <legend>Gender:</legend>
 
+                <div>
+                    <input type="radio" id="genderChoice1" name="gender" value="male" checked>
+                    <label for="genderChoice1">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="genderChoice2" name="gender" value="female">
+                    <label for="genderChoice2">Female</label>
+                </div>
+                <div>
+                    <input type="radio" id="genderChoice3" name="gender" value="other">
+                    <label for="genderChoice3">Other</label>
+                </div>
+            </fieldset>
 
+            <br>
 
-        <br>
+            <fieldset>
+                <legend>Pets:</legend>
+                <div>
+                    <input type="checkbox" id="petsChoice1" name="cat" value="cat">
+                    <label for="petsChoice1">Cat</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="petsChoice2" name="dog" value="dog">
+                    <label for="petsChoice2">Dog</label>
+                </div>
+            </fieldset>
 
-        <input type="submit" value="Register!">
-        <input type="reset">
+            <br>
 
-    </form>
+            <label for="cars">Cars:</label>
+            <select id="cars" name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="audi" selected>Audi</option>
+            </select>
+
+            <br><br>
+
+            <input type="submit" value="Register!">
+            <input type="reset">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Website made with love</p>
+    </footer>
+
 </body>
 
 </html>
+
+<!-- Query strings:
+(name=value)
+?firstName=fake
+&lastName=man
+&email=fake%40gmail.com (URL encoding)
+&password=11223344
+&birthday=2023-03-08
+&gender=female
+&cat=cat
+&dog=dog
+&cars=volvo -->
