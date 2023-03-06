@@ -1,0 +1,61 @@
+* {
+    text-align: right;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1512386233331-f023884a92e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format);
+    background-size: cover;
+}
+
+h2 {
+    color: yellow;
+}
+
+h2 + p {
+    color: #aa3939;
+    text-align: center;
+    border: 5px solid #ffaaaa;
+    cursor: pointer;
+}
+
+p {
+    /* text-decoration: underline;
+    text-transform: uppercase; */
+    line-height: 25px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 100%;
+    /* font-family: Georgia; */
+    /* font-family: "Times New Roman", Georgia; */
+    font-family: "Poiret One", cursive;
+}
+
+img {
+    float: left;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.webtext:first-child {
+    border: 5px dashed green;
+}
+
+.active {
+    color: red;
+}
+
+#div1 {
+    background-color: rgba(0, 0, 255, 0.2);
+}
+
+#div2 {
+    background-color: rgba(255, 0, 0, 0.2);
+}
